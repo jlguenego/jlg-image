@@ -39,4 +39,4 @@ testem.log
 Thumbs.db
 
 # Specific to JLG
-/src/assets/thumbnail
+/src/assets/thumbnails

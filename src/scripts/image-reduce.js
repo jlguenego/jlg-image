@@ -7,7 +7,7 @@ const mkdirp = require('mkdirp');
 process.chdir(__dirname);
 
 const input = '../assets/images/**/*.{jpg,JPG,jpeg,JPEG,png,svg,gif}';
-const output = '../assets/thumbnail/images';
+const output = '../assets/thumbnails/images';
 mkdirp(output);
 
 glob(input, {}, function (err, files) {
