@@ -1,3 +1,3 @@
-<img class="no-image">
-<img *ngIf="state >= 2" [src]="image">
-<img class="blur" [class.exit]="state >= 2" *ngIf="state >= 1" [src]="thumbnail">
+<img [class.visible]="state === 2" [src]="image">
+<img class="blur" [class.visible]="state === 1" [src]="thumbnail">
+<img class="no-image" [class.visible]="state === 0">
