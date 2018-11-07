@@ -19,10 +19,10 @@ export class JlgImageComponent implements OnInit {
     (async () => {
       try {
         this.state = 0;
-        await timer(2000).toPromise();
+        // await timer(500).toPromise();
         await this.li.loadImage(this.thumbnail);
         this.state = 1;
-        await timer(2000).toPromise();
+        // await timer(2000).toPromise();
         await this.li.loadImage(this.image);
         this.state = 2;
       } catch (e) {
