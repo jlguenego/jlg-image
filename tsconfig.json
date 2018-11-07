@@ -16,6 +16,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "jlg-image": [
+        "dist/jlg-image"
+      ],
+      "jlg-image/*": [
+        "dist/jlg-image/*"
+      ]
+    }
   }
 }

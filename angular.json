@@ -129,6 +129,41 @@
           }
         }
       }
+    },
+    "jlg-image": {
+      "root": "projects/jlg-image",
+      "sourceRoot": "projects/jlg-image/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/jlg-image/tsconfig.lib.json",
+            "project": "projects/jlg-image/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/jlg-image/src/test.ts",
+            "tsConfig": "projects/jlg-image/tsconfig.spec.json",
+            "karmaConfig": "projects/jlg-image/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/jlg-image/tsconfig.lib.json",
+              "projects/jlg-image/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "jlg-angular-img"
