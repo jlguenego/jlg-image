@@ -1,0 +1,40 @@
+:host {
+    display: inline-block;
+    background: #eee;
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: fadein 1s forwards;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.exit {
+    animation: fadeout 1s forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

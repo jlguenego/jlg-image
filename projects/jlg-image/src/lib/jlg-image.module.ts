@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { JlgImageComponent } from './jlg-image.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [JlgImageComponent],
   imports: [
+    CommonModule
   ],
   exports: [JlgImageComponent]
 })
